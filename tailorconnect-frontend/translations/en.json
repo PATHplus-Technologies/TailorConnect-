@@ -1,0 +1,356 @@
+{
+    "nav": {
+        "home": "Home",
+        "tailors": "Find Tailors",
+        "designs": "Designs",
+        "aiStudio": "AI Design Studio",
+        "measurements": "My Sizes",
+        "orders": "Orders",
+        "chat": "Messages",
+        "dashboard": "Dashboard",
+        "login": "Login",
+        "signup": "Sign Up",
+        "logout": "Logout"
+    },
+    "home": {
+        "hero": {
+            "title1": "Your Style,",
+            "title2": "Perfectly Tailored",
+            "subtitle": "Connect with expert local artisans. Manage your measurements digitally. Get custom clothes that fit you perfectly, every time.",
+            "searchPlaceholder": "Search for tailors, specialties, or locations...",
+            "searchButton": "Search",
+            "popular": "Popular:"
+        },
+        "stats": {
+            "clients": "Happy Clients",
+            "tailors": "Expert Tailors",
+            "designs": "Unique Designs",
+            "orders": "Orders Completed"
+        },
+        "features": {
+            "title": "Why TailorConnect?",
+            "subtitle": "The modern way to get custom clothes",
+            "description": "We've solved the biggest headaches of traditional tailoring.",
+            "measurements": {
+                "title": "Digital Measurements",
+                "description": "Save your body measurements once. Reuse them for every order. No more re-measuring every time."
+            },
+            "chat": {
+                "title": "Direct Chat",
+                "description": "Chat directly with tailors. Share photos, discuss fabrics, and get updates on your order status."
+            },
+            "designs": {
+                "title": "Curated Designs",
+                "description": "Browse distinct styles from verified local talent. Find the perfect look for any occasion."
+            },
+            "payments": {
+                "title": "Secure Payments",
+                "description": "Your money is held securely until you are satisfied with the work. Trust built-in."
+            }
+        },
+        "tailors": {
+            "sectionLabel": "Expert Artisans",
+            "title": "Top Rated Tailors",
+            "viewAll": "View All Tailors →",
+            "experience": "Years Exp."
+        },
+        "designs": {
+            "sectionLabel": "Inspiration",
+            "title": "Trending Designs",
+            "viewAll": "View Gallery →",
+            "by": "By"
+        },
+        "cta": {
+            "title": "Ready to upgrade your style?",
+            "subtitle": "Join thousands of happy clients getting custom-made outfits delivered to their door.",
+            "getStarted": "Get Started for Free",
+            "browseTailors": "Browse Tailors"
+        }
+    },
+    "auth": {
+        "login": {
+            "title": "Welcome Back",
+            "subtitle": "Sign in to your account",
+            "username": "Username",
+            "password": "Password",
+            "button": "Sign In",
+            "noAccount": "Don't have an account?",
+            "signupLink": "Sign up",
+            "forgotPassword": "Forgot password?",
+            "error": "Invalid username or password"
+        },
+        "signup": {
+            "title": "Create your account",
+            "subtitle": "Already have an account?",
+            "signinLink": "Sign in",
+            "role": "I am a...",
+            "client": "client",
+            "tailor": "tailor",
+            "username": "Username",
+            "email": "Email Address",
+            "password": "Password",
+            "phone": "Phone",
+            "address": "Address/Location",
+            "button": "Join as",
+            "terms": "By signing up, you agree to our Terms of Service and Privacy Policy.",
+            "hero": {
+                "title": "Join the Revolution",
+                "clientSubtitle": "Whether you're looking for the perfect fit or you're a master craftsman, TailorConnect is your platform.",
+                "tailorSubtitle": "Showcase your craft to thousands of clients waiting for your expertise.",
+                "forClients": "For Clients",
+                "clientFeature": "Access custom designs, track orders, and get measured digitally.",
+                "forTailors": "For Tailors",
+                "tailorFeature": "Showcase your portfolio, manage clients, and grow your business."
+            }
+        },
+        "reset": {
+            "title": "Reset Password",
+            "subtitle": "Enter your email to receive a password reset token.",
+            "requestSuccess": "Reset instructions sent!",
+            "requestError": "Email not found or error occurred",
+            "checkEmail": "Check your email",
+            "submittedNote": "We've sent recovery instructions to your email.",
+            "button": "Send Reset Link",
+            "backToLogin": "Return to Login",
+            "setNewTitle": "Set New Password",
+            "setNewSubtitle": "Please enter your new password below.",
+            "tokenLabel": "Reset Token",
+            "confirmLabel": "Confirm Password",
+            "updateButton": "Reset Password",
+            "success": "Password reset successfully!",
+            "error": "Invalid token or error occurred"
+        }
+    },
+    "dashboard": {
+        "welcome": "Welcome back",
+        "client": {
+            "title": "Your Dashboard",
+            "quickActions": "Quick Actions",
+            "findTailor": "Find a Tailor",
+            "aiStudio": "AI Design Studio",
+            "myMeasurements": "My Measurements",
+            "recentOrders": "Recent Orders",
+            "viewAll": "View All Orders",
+            "profileViewNote": "Clients see \"Hire\" & \"Chat\" buttons here."
+        },
+        "tailor": {
+            "title": "Tailor Dashboard",
+            "quickActions": "Quick Actions",
+            "addDesign": "Add New Design",
+            "viewOrders": "View Orders",
+            "editProfile": "Edit Profile",
+            "pendingOrders": "Pending Orders",
+            "viewAll": "View All Orders",
+            "myClients": "My Connected Clients",
+            "noClients": "No clients connected yet."
+        }
+    },
+    "measurements": {
+        "title": "My Sizes",
+        "subtitle": "Manage and share your body measurements",
+        "addNew": "+ Add New Profile",
+        "newProfile": "New Measurement Profile",
+        "editProfile": "Edit Measurement Profile",
+        "profileName": "Profile Name",
+        "profileNamePlaceholder": "e.g. Traditional Fit, Suit Fit",
+        "chest": "Chest",
+        "waist": "Waist",
+        "hips": "Hips",
+        "shoulder": "Shoulder",
+        "inseam": "Inseam",
+        "sleeveLength": "Sleeve Length",
+        "neck": "Neck",
+        "save": "Save Profile",
+        "update": "Update Profile",
+        "cancel": "Cancel",
+        "copy": "Copy",
+        "copyAll": "📋 Copy All",
+        "edit": "✏️ Edit",
+        "delete": "🗑️",
+        "deleteConfirm": "Are you sure you want to delete this measurement profile?",
+        "empty": "No measurement profiles found.",
+        "createFirst": "Create your first profile"
+    },
+    "orders": {
+        "myOrders": "My Orders",
+        "incomingOrders": "Incoming Orders",
+        "subtitle": "Track your custom clothing journey",
+        "status": {
+            "pending": "Request Sent",
+            "accepted": "Accepted",
+            "inProgress": "In Progress",
+            "completed": "Ready/Delivered",
+            "cancelled": "Cancelled"
+        },
+        "tailor": "Tailor",
+        "date": "Date",
+        "price": "Total Price",
+        "pendingQuote": "Pending Quote",
+        "measurements": "Measurements",
+        "customRequest": "Custom Request",
+        "noOrders": "No orders found.",
+        "browseDesigns": "Browse Designs",
+        "rateJob": "Rate Job",
+        "payNow": "Pay Online",
+        "message": "Message",
+        "attachedMeasurements": "Attached Measurements",
+        "orderNumber": "Order #",
+        "paymentSuccessful": "Online payment processed successfully! (Optional)",
+        "reviewSubmitted": "Review Submitted Successfully!",
+        "statusUpdateFailed": "Failed to update status",
+        "clientDesign": "Client's Design"
+    },
+    "footer": {
+        "product": "Product",
+        "support": "Support",
+        "contact": "Contact Us",
+        "about": "About",
+        "description": "Connecting you with the best tailors for your perfect fit.",
+        "rights": "All rights reserved."
+    },
+    "modals": {
+        "review": {
+            "title": "Rate Your Experience",
+            "rating": "Your Rating",
+            "comment": "Your Comment",
+            "commentPlaceholder": "Share your thoughts about the quality and service...",
+            "submit": "Submit Review"
+        },
+        "payment": {
+            "title": "Secure Payment",
+            "amountToPay": "Amount to Pay",
+            "cardNumber": "Card Number",
+            "expiry": "Expiry",
+            "cvv": "CVV",
+            "pay": "Complete Payment",
+            "processing": "Processing..."
+        },
+        "addDesign": {
+            "title": "Add New Design",
+            "name": "Design Name",
+            "description": "Description",
+            "price": "Price (GNF)",
+            "image": "Design Image",
+            "uploading": "Uploading...",
+            "submit": "Add to Portfolio",
+            "clickToUpload": "Click to upload",
+            "imageSpecs": "PNG, JPG up to 10MB",
+            "namePlaceholder": "e.g. Traditional Boubou, Modern Suit",
+            "descriptionPlaceholder": "Describe the design, materials, style...",
+            "pricePlaceholder": "e.g. 500000"
+        },
+        "createOrder": {
+            "title": "Create New Order",
+            "requestDetails": "Request Details",
+            "detailsPlaceholder": "Describe exactly what you want (fabric type, style details, etc.)",
+            "uploadReference": "Upload Reference Image (Optional)",
+            "selectMeasurements": "Attach Your Measurements",
+            "submit": "Send Request"
+        }
+    },
+    "tailors": {
+        "title": "Top Tailors",
+        "subtitle": "Discover the most talented artisans near you",
+        "searchPlaceholder": "Search by name or specialty...",
+        "allSpecialties": "All Specialties",
+        "experience": "years experience",
+        "available": "Available for work",
+        "busy": "Busy",
+        "editProfile": "Edit Profile",
+        "yearsExp": "Years Exp.",
+        "address": "Address",
+        "phone": "Phone",
+        "chatNow": "Chat Now",
+        "hireTailor": "HIRE TAILOR",
+        "portfolio": "Portfolio",
+        "noDesigns": "This tailor hasn't uploaded any designs yet.",
+        "notFound": "Tailor profile not found"
+    },
+    "designs": {
+        "title": "Browse Designs",
+        "subtitle": "Get inspired by the latest trends",
+        "viewAll": "View Gallery",
+        "detail": {
+            "back": "Back",
+            "exclusive": "Exclusive Design",
+            "noImage": "No Image Available",
+            "designedBy": "Designed by",
+            "orderNow": "Order Now",
+            "askQuestion": "Ask a Question",
+            "notFound": "Design not found",
+            "emptyPortfolio": "No designs in your portfolio yet.",
+            "emptyGallery": "No designs found yet."
+        },
+        "generate": {
+            "title": "AI Design Studio",
+            "subtitle": "Describe your dream outfit, and our AI will bring it to life in seconds.",
+            "promptLabel": "Describe your vision",
+            "promptPlaceholder": "e.g., A red velvet dress with lace sleeves...",
+            "inspirationsLabel": "Try an inspiration",
+            "generateButton": "Generate Design",
+            "generating": "Dreaming...",
+            "emptyTitle": "Your Canvas is Empty",
+            "emptySubtitle": "Enter a description on the left to watch your ideas come to life using AI.",
+            "download": "Download",
+            "findTailor": "Find a Tailor",
+            "error": "Failed to generate design. Please try again.",
+            "inspirations": [
+                "A modern African print blazer with sharp lapels",
+                "A flowing silk evening gown with golden embroidery",
+                "A traditional Agbada in deep blue with white stitching",
+                "A minimalist linen suit for a summer wedding"
+            ]
+        }
+    },
+    "chat": {
+        "messages": "Messages",
+        "empty": "No conversations yet.",
+        "startConversation": "Start a conversation",
+        "typeMessage": "Type a message...",
+        "webTitle": "TailorConnect Web",
+        "selectConversation": "Select a conversation to start messaging instantly."
+    },
+    "profile": {
+        "updateTitle": "Update Your Profile",
+        "bio": "About You / Bio",
+        "specialty": "Specialties (comma separated)",
+        "experience": "Years of Experience",
+        "location": "Location (City)",
+        "availability": "Available for new orders",
+        "saveChanges": "Save Changes",
+        "specialty_lepi": "Lépi Specialist",
+        "specialty_kindili": "Kindili Specialist",
+        "specialty_foret": "Forêt Sacrée",
+        "specialty_bazin": "Bazin Rich",
+        "specialty_embroidery": "Hand Embroidery",
+        "specialty_wedding": "Wedding & Bridal",
+        "specialty_traditional": "Traditional Wear",
+        "specialty_fusion": "Modern Fusion",
+        "specialty_suits": "Suits",
+        "specialty_dresses": "Dresses",
+        "specialty_shirts": "Shirts",
+        "specialty_alterations": "Alterations"
+    },
+    "common": {
+        "email": "Email Address",
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "success": "Success!",
+        "confirm": "Confirm",
+        "cancel": "Cancel",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "close": "Close",
+        "viewMore": "View More",
+        "learnMore": "Learn More"
+    },
+    "reviews": {
+        "title": "Client Reviews",
+        "count": "reviews",
+        "empty": "No reviews yet.",
+        "submit": "Submit Review",
+        "rating": "Rating",
+        "comment": "Comment"
+    }
+}

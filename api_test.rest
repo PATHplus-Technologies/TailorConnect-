@@ -1,0 +1,66 @@
+### Auth
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+{
+  "username": "demo_client",
+  "password": "pass123"
+}
+
+### List Measurements
+GET http://127.0.0.1:8000/api/measurements/
+Authorization: Bearer <your_token_here>
+
+### Create Measurement
+POST http://127.0.0.1:8000/api/measurements/
+Content-Type: application/json
+Authorization: Bearer <your_token_here>
+
+{
+    "profile_name": "Traditional Wear",
+    "chest": 40.5,
+    "waist": 32.0,
+    "inseam": 30.0
+}
+
+### Start Conversation
+POST http://127.0.0.1:8000/api/conversations/start/
+Content-Type: application/json
+Authorization: Bearer <your_token_here>
+
+{
+    "user_id": 2
+}
+
+### Send Message
+POST http://127.0.0.1:8000/api/messages/
+Content-Type: application/json
+Authorization: Bearer <your_token_here>
+
+{
+    "conversation": 1,
+    "content": "Hello, when can I come for fitting?"
+}
+
+### Create Transaction (Simulate Paystack/Mobile Money)
+POST http://127.0.0.1:8000/api/transactions/
+Content-Type: application/json
+Authorization: Bearer <your_token_here>
+
+{
+    "order": 1,
+    "amount": 500000,
+    "currency": "GNF",
+    "status": "pending"
+}
+
+### Leave Review
+POST http://127.0.0.1:8000/api/reviews/
+Content-Type: application/json
+Authorization: Bearer <your_token_here>
+
+{
+    "tailor": 1,
+    "rating": 5,
+    "comment": "Best tailor in Conakry!"
+}

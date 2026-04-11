@@ -1,0 +1,24 @@
+1. superuser creation 
+   a. Username: Foula25
+   b. email: foulaly
+   c. password: path2025
+
+% Identifier toutes fonctionnalités backend necessaire.
+2. Reviews & Ratings ⭐ (CRITICAL)
+   Current State: No feedback system.
+   Requirement: Clients need to rate and review tailors to build trust within the community.
+
+3. Messaging / Chat 💬 (HIGH PRIORITY)
+   Current State: No in-app communication. Relying on phone numbers (exposed in User model) allows platform leakage.
+   Requirement: Integrated chat for discussing fabric choices, design customizations, and fitting appointments.
+
+4. Payments 💳 (HIGH PRIORITY)
+   Current State: No payment processing code exists.
+   Requirement: Integration with local payment gateways (e.g., Paystack, Flutterwave, or Mobile Money) to handle deposits and final payments securely.
+
+5. Notifications 🔔
+   Current State: No real-time updates.
+   Requirement: Push notifications or emails for order status changes, new messages, and appointment reminders.
+
+Recommendations
+To make this app market-ready, I recommend solving the Measurements and Reviews gaps immediately, as they are core to the fundamental value proposition of connecting clients with tailors.

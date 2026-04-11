@@ -1,0 +1,49 @@
+# ── Python / Django ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environment
+TCvenv/
+venv/
+env/
+.venv/
+
+# Django
+*.sqlite3
+db.sqlite3
+staticfiles/
+media/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+debug_log.txt
+
+# ── Next.js / Node ───────────────────────────────────────────
+tailorconnect-frontend/node_modules/
+tailorconnect-frontend/.next/
+tailorconnect-frontend/out/
+tailorconnect-frontend/.env
+tailorconnect-frontend/.env.*
+!tailorconnect-frontend/.env.example
+
+# ── OS / Editor ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ── Misc ─────────────────────────────────────────────────────
+*.zip
+output.txt
