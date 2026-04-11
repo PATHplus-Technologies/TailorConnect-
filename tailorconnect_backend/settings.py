@@ -20,6 +20,12 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
 ]
 
+# In production, add your Vercel frontend URL via env variable
+# e.g. CORS_EXTRA_ORIGIN=https://tailorconnect.vercel.app
+_extra_origin = os.environ.get('CORS_EXTRA_ORIGIN', '')
+if _extra_origin:
+    CORS_ALLOWED_ORIGINS.append(_extra_origin)
+
 
 # Application definition
 
