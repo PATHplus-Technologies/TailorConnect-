@@ -36,8 +36,8 @@ class UserSerializer(serializers.ModelSerializer):
         )
 
         if user.role == 'tailor':
-            # Signal already created the profile
-            profile = user.tailor_profile
+            from .models import TailorProfile
+            profile, created = TailorProfile.objects.get_or_create(user=user)
             profile.experience = experience
             profile.location = user.address
             profile.address = user.address
