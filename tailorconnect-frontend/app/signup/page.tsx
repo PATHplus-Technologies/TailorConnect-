@@ -32,6 +32,7 @@ export default function SignupPage() {
     const handleSignup = async (e: React.FormEvent) => {
         e.preventDefault();
         setLoading(true);
+        console.log('SignupPage: Form submitted');
 
         // Prepare payload with correct types
         const payload = {
@@ -40,15 +41,32 @@ export default function SignupPage() {
         };
 
         try {
+            console.log('SignupPage: Calling register...');
             await register(payload);
+            console.log('SignupPage: Registration successful');
+            
             showToast(t('auth.signup.success') || 'Registration successful! Please login.', 'success');
-            router.push('/login?registered=true');
+            
+            // Give the toast a moment to be seen before redirecting
+            setTimeout(() => {
+                router.push('/login?registered=true');
+            }, 1000);
+            
         } catch (err: any) {
-            console.error(err);
-            const msg = err.response?.data?.username ? 'Username already exists' : 'Registration failed. Please check your inputs.';
-            showToast(msg, 'error');
-        } finally {
-            setLoading(false);
+            console.error('SignupPage: Error during signup', err);
+            
+            // Extract the most descriptive error message
+            let errorMsg = 'Registration failed. Please check your inputs.';
+            if (err.response?.data) {
+                const data = err.response.data;
+                if (data.username) errorMsg = `Username error: ${data.username}`;
+                else if (data.email) errorMsg = `Email error: ${data.email}`;
+                else if (typeof data === 'string') errorMsg = data;
+                else if (data.detail) errorMsg = data.detail;
+            }
+            
+            showToast(errorMsg, 'error');
+            setLoading(false); // Only unset loading on error, success will redirect
         }
     };
 

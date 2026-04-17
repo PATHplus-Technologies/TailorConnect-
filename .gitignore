@@ -28,9 +28,10 @@ media/
 
 # Logs
 *.log
-debug_log.txt
+logs/
 
 # ── Next.js / Node ───────────────────────────────────────────
+node_modules/
 tailorconnect-frontend/node_modules/
 tailorconnect-frontend/.next/
 tailorconnect-frontend/out/

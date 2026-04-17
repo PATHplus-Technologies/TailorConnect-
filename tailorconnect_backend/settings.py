@@ -13,16 +13,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', "django-insecure-4m_!=syi$2$$eemt(mom4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '.railway.app',          # covers all *.railway.app subdomains
-    '.up.railway.app',       # covers Railway production domains
-]
-# Allow overriding via env variable (comma-separated)
-_extra_hosts = os.environ.get('ALLOWED_HOSTS', '')
-if _extra_hosts:
-    ALLOWED_HOSTS += [h.strip() for h in _extra_hosts.split(',')]
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '*').split(',')
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",

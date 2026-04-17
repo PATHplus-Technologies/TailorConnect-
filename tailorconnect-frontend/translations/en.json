@@ -92,6 +92,7 @@
             "phone": "Phone",
             "address": "Address/Location",
             "button": "Join as",
+            "success": "Registration successful! Please login.",
             "terms": "By signing up, you agree to our Terms of Service and Privacy Policy.",
             "hero": {
                 "title": "Join the Revolution",

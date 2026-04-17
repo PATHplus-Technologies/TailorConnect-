@@ -92,6 +92,7 @@
             "phone": "Téléphone",
             "address": "Adresse/Localisation",
             "button": "Rejoindre en tant que",
+            "success": "Inscription réussie ! Veuillez vous connecter.",
             "terms": "En vous inscrivant, vous acceptez nos Conditions d'utilisation et notre Politique de confidentialité.",
             "hero": {
                 "title": "Rejoignez la Révolution",

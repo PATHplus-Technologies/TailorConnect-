@@ -59,8 +59,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     };
 
     const register = async (userData: any) => {
-        const response = await authService.register(userData);
-        return response.data;
+        console.log('AuthContext: Initiating registration for', userData.username);
+        try {
+            const response = await authService.register(userData);
+            console.log('AuthContext: Registration response received', response.status);
+            return response.data;
+        } catch (error: any) {
+            console.error('AuthContext: Registration error', error.response?.data || error.message);
+            throw error;
+        }
     };
 
     return (
