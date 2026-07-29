@@ -12,7 +12,6 @@ api.interceptors.request.use(
     (config) => {
         config.headers = config.headers || {};
         const token = typeof window !== 'undefined' ? localStorage.getItem('access_token') : null;
-        console.log('Axios Interceptor - Token:', token ? 'Found' : 'Missing');
         if (token) {
             config.headers.Authorization = `Bearer ${token}`;
         }
@@ -30,7 +29,6 @@ api.interceptors.response.use(
     },
     (error) => {
         if (error.response && error.response.status === 401) {
-            console.log('401 Detected - Logging out');
             if (typeof window !== 'undefined') {
                 localStorage.removeItem('access_token');
                 localStorage.removeItem('refresh_token');

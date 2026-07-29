@@ -25,13 +25,13 @@ export default function ContactPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                 </div>
-                <h1 className="text-4xl font-bold text-gray-900 mb-4">Message Sent!</h1>
+                <h1 className="text-4xl font-bold text-gray-900 mb-4">Message Envoyé!</h1>
                 <p className="text-xl text-gray-600 max-w-md mx-auto">
-                    Thank you for reaching out, <span className="font-semibold text-indigo-600">{formData.name}</span>. We've received your inquiry and our team will get back to you within 24 hours.
+                    Merci de nous avoir contactés, <span className="font-semibold text-indigo-600">{formData.name}</span>. Nous avons bien reçu votre demande et notre équipe vous contactera dans les plus brefs délais.
                 </p>
                 <div className="mt-10">
                     <a href="/" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors shadow-lg hover:shadow-xl">
-                        Back to Home
+                        Retour à l'accueil
                     </a>
                 </div>
             </div>
@@ -43,10 +43,10 @@ export default function ContactPage() {
             <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h1 className="text-5xl font-extrabold text-gray-900 tracking-tight sm:text-6xl mb-4">
-                        Let's Talk Design
+                        Parlons Design
                     </h1>
                     <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-                        Whether you have a specific vision or just want to explore possibilities, our team of expert tailors and designers is here to help.
+                        Que vous ayez une idée précise en tête ou que vous souhaitiez simplement explorer les différentes possibilités, notre équipe de couturiers et de designers experts est là pour vous aider.
                     </p>
                 </div>
 
@@ -54,9 +54,9 @@ export default function ContactPage() {
                     {/* Contact Info Column */}
                     <div className="space-y-8 lg:pr-12">
                         <div>
-                            <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
+                            <h2 className="text-2xl font-bold text-gray-900 mb-6">Information de Contact </h2>
                             <p className="text-gray-600 mb-8 leading-relaxed">
-                                Fill out the form and our team will get back to you within 24 hours. We're excited to hear about your project!
+                                Remplissez le formulaire et notre equipe reviendra vers vous dans plus brefs delai. Nous sommes impatients d'en savoir plus sur votre projet!
                             </p>
                         </div>
 
@@ -68,8 +68,8 @@ export default function ContactPage() {
                                     </svg>
                                 </div>
                                 <div>
-                                    <p className="text-sm font-medium text-gray-500">Email us</p>
-                                    <p className="text-lg font-semibold text-gray-900">hello@tailorconnect.com</p>
+                                    <p className="text-sm font-medium text-gray-500">Nous joindre par Email</p>
+                                    <p className="text-lg font-semibold text-gray-900">pathtechnologies.info@gmail.com</p>
                                 </div>
                             </div>
 
@@ -80,8 +80,8 @@ export default function ContactPage() {
                                     </svg>
                                 </div>
                                 <div>
-                                    <p className="text-sm font-medium text-gray-500">Call us</p>
-                                    <p className="text-lg font-semibold text-gray-900">+1 (555) 000-0000</p>
+                                    <p className="text-sm font-medium text-gray-500">Appelez-nous</p>
+                                    <p className="text-lg font-semibold text-gray-900">+224 (621) 17 35 35</p>
                                 </div>
                             </div>
 
@@ -93,8 +93,8 @@ export default function ContactPage() {
                                     </svg>
                                 </div>
                                 <div>
-                                    <p className="text-sm font-medium text-gray-500">Visit us</p>
-                                    <p className="text-lg font-semibold text-gray-900">123 Atelier Way, Paris, France</p>
+                                    <p className="text-sm font-medium text-gray-500">Visitez-nous</p>
+                                    <p className="text-lg font-semibold text-gray-900">850 Avenue de la Victoire, Conakry, Guinée</p>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +127,7 @@ export default function ContactPage() {
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+                                    <label className="block text-sm font-semibold text-gray-700 mb-2">NOM ET PRENOM</label>
                                     <input
                                         type="text"
                                         required
@@ -162,10 +162,10 @@ export default function ContactPage() {
                             </div>
                             <div>
                                 <button type="submit" className="w-full bg-indigo-600 text-white font-bold py-4 rounded-xl hover:bg-indigo-700 active:scale-[0.98] transition-all shadow-lg shadow-indigo-200">
-                                    Send Message
+                                    Envoyer le Message
                                 </button>
                                 <p className="mt-4 text-center text-xs text-gray-400">
-                                    By submitting, you agree to our <a href="#" className="underline">Privacy Policy</a>.
+                                    En soumettant, vous acceptez notre <a href="#" className="underline">Politique de confidentialité</a>.
                                 </p>
                             </div>
                         </form>

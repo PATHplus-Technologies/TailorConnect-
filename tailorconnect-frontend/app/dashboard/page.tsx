@@ -12,6 +12,7 @@ export default function Dashboard() {
     const { t } = useLanguage();
     const [role, setRole] = useState<string | null>(null);
     const [username, setUsername] = useState<string | null>(null);
+    const [profileId, setProfileId] = useState<number | null>(null);
 
     useEffect(() => {
         const token = localStorage.getItem('access_token');
@@ -28,6 +29,12 @@ export default function Dashboard() {
     useEffect(() => {
         if (role === 'tailor') {
             tailorService.getClients().then(setClients).catch(console.error);
+            // Fetch own profile to get the TailorProfile ID (different from user_id)
+            const userId = Number(localStorage.getItem('user_id'));
+            tailorService.getAll().then((profiles: any[]) => {
+                const mine = profiles.find((p: any) => p.user?.id === userId);
+                if (mine) setProfileId(mine.id);
+            }).catch(console.error);
         }
     }, [role]);
 
@@ -121,7 +128,7 @@ export default function Dashboard() {
                 </div>
             </Link>
 
-            <Link href={`/tailors/${localStorage.getItem('user_id')}`} className="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100">
+            <Link href={profileId ? `/tailors/${profileId}` : '#'} className="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-gray-100">
                 <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
                     👤
                 </div>

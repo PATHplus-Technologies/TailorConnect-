@@ -8,3 +8,24 @@ cd "C:\Users\USER\Documents\PATH+Technologies\TailorConnect"
 git add .
 git commit -m "your message here"
 git push
+cd tailorconnect-frontend; npm run dev
+
+#1. Backend: Railway
+
+#2. frontend: Vercel
+
+#Deployment sur ngrok
+1. ngrok config add-authtoken <YOUR_PERSONAL_AUTHTOKEN>  sur ngrok.com
+A PowerShell script that will:
+
+Start ngrok http 3000 --host-header="localhost:3000" in a separate window.
+Poll the ngrok local API (http://127.0.0.1:4040/api/tunnels) 
+Manual Verification
+Run the script: .\start-ngrok.ps1 in PowerShell.
+Verify that three new terminal windows open:
+One for ngrok
+One for Django backend
+One for Next.js frontend
+Click the generated https://*.ngrok-free.app link.
+Verify that the TailorConnect frontend loaded correctly.
+Verify that network requests (e.g. login, fetching data) work perfectly without any CORS or CSRF errors.

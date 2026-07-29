@@ -18,6 +18,7 @@ export default function TailorProfilePage() {
     const [designs, setDesigns] = useState<any[]>([]);
     const [reviews, setReviews] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
     const [showOrderModal, setShowOrderModal] = useState(false);
     const [showUpdateModal, setShowUpdateModal] = useState(false);
     const [userRole, setUserRole] = useState<string | null>(null);
@@ -45,8 +46,13 @@ export default function TailorProfilePage() {
                 setDesigns(d);
                 setReviews(r);
             }
-        } catch (e) {
+        } catch (e: any) {
             console.error(e);
+            if (e?.response?.status === 404) {
+                setError('Tailor profile not found. It may have been deleted or the ID is incorrect.');
+            } else {
+                setError('Failed to load profile. Please check your connection and try again.');
+            }
         } finally {
             setLoading(false);
         }
@@ -55,6 +61,22 @@ export default function TailorProfilePage() {
     if (loading) return (
         <div className="flex items-center justify-center min-h-screen">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-green-600"></div>
+        </div>
+    );
+
+    if (error) return (
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+            <div className="text-center p-12">
+                <div className="text-6xl mb-4">🔍</div>
+                <h2 className="text-2xl font-bold text-gray-800 mb-2">Profile Not Found</h2>
+                <p className="text-gray-500 mb-6 max-w-md">{error}</p>
+                <button
+                    onClick={() => router.push('/tailors')}
+                    className="bg-green-600 text-white px-6 py-3 rounded-full font-bold hover:bg-green-700 transition-all"
+                >
+                    ← Browse Tailors
+                </button>
+            </div>
         </div>
     );
 

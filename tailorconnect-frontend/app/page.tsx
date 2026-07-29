@@ -208,7 +208,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {tailors.map(tailor => (
-              <Link key={tailor.id} href={`/tailors/${tailor.user.id}`} className="group bg-gray-50 rounded-2xl p-6 hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-gray-100">
+              <Link key={tailor.id} href={`/tailors/${tailor.id}`} className="group bg-gray-50 rounded-2xl p-6 hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-gray-100">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-2xl">
                     🧵

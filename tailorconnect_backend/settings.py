@@ -22,14 +22,27 @@ CORS_ALLOWED_ORIGINS = [
 
 # In production, add your Vercel frontend URL via env variable
 # e.g. CORS_EXTRA_ORIGIN=https://tailorconnect.vercel.app
-_extra_origin = os.environ.get('CORS_EXTRA_ORIGIN', '')
-if _extra_origin:
-    CORS_ALLOWED_ORIGINS.append(_extra_origin)
+CORS_EXTRA_ORIGIN = os.environ.get('CORS_EXTRA_ORIGIN', '')
+if CORS_EXTRA_ORIGIN:
+    CORS_ALLOWED_ORIGINS.append(CORS_EXTRA_ORIGIN)
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+]
+if CORS_EXTRA_ORIGIN:
+    CSRF_TRUSTED_ORIGINS.append(CORS_EXTRA_ORIGIN)
+
+# Also trust the Railway domain itself for CSRF (admin etc)
+RAILWAY_PUBLIC_DOMAIN = os.environ.get('RAILWAY_PUBLIC_DOMAIN')
+if RAILWAY_PUBLIC_DOMAIN:
+    CSRF_TRUSTED_ORIGINS.append(f"https://{RAILWAY_PUBLIC_DOMAIN}")
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    "cloudinary_storage",
     "corsheaders",
     "django_filters",
     "django.contrib.admin",
@@ -53,6 +66,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework_simplejwt",
     "django_rest_passwordreset",
+    "cloudinary",
 ]
 
 # Email configuration for password reset
@@ -123,7 +137,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "fr"
 
 TIME_ZONE = "UTC"
 
@@ -144,9 +158,24 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-import os
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+if not DEBUG:
+    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+else:
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
+    'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
+    'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
+}
+
+# Production Security
+if not DEBUG:
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
 
 AUTH_USER_MODEL = 'users.User'
 
