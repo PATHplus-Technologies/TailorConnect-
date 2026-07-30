@@ -20,6 +20,11 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
 ]
 
+# Support Vercel preview deployments (e.g. tailorconnect-git-main-xxx.vercel.app)
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.vercel\.app$",
+]
+
 # In production, add your Vercel frontend URL via env variable
 # e.g. CORS_EXTRA_ORIGIN=https://tailorconnect.vercel.app
 CORS_EXTRA_ORIGIN = os.environ.get('CORS_EXTRA_ORIGIN', '')
