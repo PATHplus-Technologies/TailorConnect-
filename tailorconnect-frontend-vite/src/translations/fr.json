@@ -1,0 +1,357 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "tailors": "Trouver des Tailleurs",
+        "designs": "Designs",
+        "aiStudio": "Studio de Design IA",
+        "measurements": "Mes Mesures",
+        "orders": "Commandes",
+        "chat": "Messages",
+        "dashboard": "Tableau de Bord",
+        "login": "Connexion",
+        "signup": "S'inscrire",
+        "logout": "Déconnexion"
+    },
+    "home": {
+        "hero": {
+            "title1": "Votre Style,",
+            "title2": "Parfaitement Taillé",
+            "subtitle": "Connectez-vous avec des artisans locaux experts. Gérez vos mesures numériquement. Obtenez des vêtements sur mesure qui vous vont parfaitement, à chaque fois.",
+            "searchPlaceholder": "Rechercher des tailleurs, spécialités ou lieux...",
+            "searchButton": "Rechercher",
+            "popular": "Populaire:"
+        },
+        "stats": {
+            "clients": "Clients Satisfaits",
+            "tailors": "Tailleurs Experts",
+            "designs": "Designs Uniques",
+            "orders": "Commandes Complétées"
+        },
+        "features": {
+            "title": "Pourquoi TailorConnect?",
+            "subtitle": "La façon moderne d'obtenir des vêtements sur mesure",
+            "description": "Nous avons résolu les plus grands problèmes de la couture traditionnelle.",
+            "measurements": {
+                "title": "Mesures Numériques",
+                "description": "Enregistrez vos mesures corporelles une fois. Réutilisez-les pour chaque commande. Plus besoin de remesurer à chaque fois."
+            },
+            "chat": {
+                "title": "Chat Direct",
+                "description": "Discutez directement avec les tailleurs. Partagez des photos, discutez des tissus et recevez des mises à jour sur l'état de votre commande."
+            },
+            "designs": {
+                "title": "Designs Sélectionnés",
+                "description": "Parcourez des styles distincts de talents locaux vérifiés. Trouvez le look parfait pour toute occasion."
+            },
+            "payments": {
+                "title": "Paiements Sécurisés",
+                "description": "Votre argent est conservé en toute sécurité jusqu'à ce que vous soyez satisfait du travail. Confiance intégrée."
+            }
+        },
+        "tailors": {
+            "sectionLabel": "Artisans Experts",
+            "title": "Tailleurs Les Mieux Notés",
+            "viewAll": "Voir Tous Les Tailleurs →",
+            "experience": "Ans d'Exp."
+        },
+        "designs": {
+            "sectionLabel": "Inspiration",
+            "title": "Designs Tendance",
+            "viewAll": "Voir La Galerie →",
+            "by": "Par"
+        },
+        "cta": {
+            "title": "Prêt à améliorer votre style ?",
+            "subtitle": "Rejoignez des milliers de clients satisfaits qui reçoivent des vêtements sur mesure livrés à domicile.",
+            "getStarted": "Commencer Gratuitement",
+            "browseTailors": "Parcourir Les Tailleurs"
+        }
+    },
+    "auth": {
+        "login": {
+            "title": "Bon Retour",
+            "subtitle": "Connectez-vous à votre compte",
+            "username": "Nom d'utilisateur",
+            "password": "Mot de passe",
+            "button": "Se Connecter",
+            "noAccount": "Vous n'avez pas de compte?",
+            "signupLink": "S'inscrire",
+            "forgotPassword": "Mot de passe oublié ?",
+            "error": "Nom d'utilisateur ou mot de passe invalide"
+        },
+        "signup": {
+            "title": "Créez votre compte",
+            "subtitle": "Vous avez déjà un compte?",
+            "signinLink": "Se connecter",
+            "role": "Je suis un...",
+            "client": "client",
+            "tailor": "tailleur",
+            "username": "Nom d'utilisateur",
+            "email": "Adresse Email",
+            "password": "Mot de passe",
+            "phone": "Téléphone",
+            "address": "Adresse/Localisation",
+            "button": "Rejoindre en tant que",
+            "success": "Inscription réussie ! Veuillez vous connecter.",
+            "terms": "En vous inscrivant, vous acceptez nos Conditions d'utilisation et notre Politique de confidentialité.",
+            "hero": {
+                "title": "Rejoignez la Révolution",
+                "clientSubtitle": "Que vous recherchiez la coupe parfaite ou que vous soyez un maître artisan, TailorConnect est votre plateforme.",
+                "tailorSubtitle": "Présentez votre savoir-faire à des milliers de clients qui attendent votre expertise.",
+                "forClients": "Pour les Clients",
+                "clientFeature": "Accédez à des designs personnalisés, suivez vos commandes et faites vos mesures numériquement.",
+                "forTailors": "Pour les Tailleurs",
+                "tailorFeature": "Présentez votre portfolio, gérez vos clients et développez votre activité."
+            }
+        },
+        "reset": {
+            "title": "Réinitialiser le mot de passe",
+            "subtitle": "Entrez votre email pour recevoir un jeton de réinitialisation.",
+            "requestSuccess": "Instructions envoyées !",
+            "requestError": "Email non trouvé ou erreur survenue",
+            "checkEmail": "Vérifiez vos emails",
+            "submittedNote": "Nous avons envoyé les instructions à votre adresse email.",
+            "button": "Envoyer le lien",
+            "backToLogin": "Retour à la connexion",
+            "setNewTitle": "Nouveau mot de passe",
+            "setNewSubtitle": "Veuillez entrer votre nouveau mot de passe ci-dessous.",
+            "tokenLabel": "Jeton de réinitialisation",
+            "confirmLabel": "Confirmer le mot de passe",
+            "updateButton": "Réinitialiser le mot de passe",
+            "success": "Mot de passe réinitialisé avec succès !",
+            "error": "Jeton invalide ou erreur survenue"
+        }
+    },
+    "dashboard": {
+        "welcome": "Bon retour",
+        "client": {
+            "title": "Votre Tableau de Bord",
+            "quickActions": "Actions Rapides",
+            "findTailor": "Trouver un Tailleur",
+            "aiStudio": "Studio de Design IA",
+            "myMeasurements": "Mes Mesures",
+            "recentOrders": "Commandes Récentes",
+            "viewAll": "Voir Toutes les Commandes",
+            "profileViewNote": "Les clients voient les boutons \"Engager\" et \"Chat\" ici."
+        },
+        "tailor": {
+            "title": "Tableau de Bord Tailleur",
+            "quickActions": "Actions Rapides",
+            "addDesign": "Ajouter un Nouveau Design",
+            "viewOrders": "Voir les Commandes",
+            "editProfile": "Modifier le Profil",
+            "pendingOrders": "Commandes en Attente",
+            "viewAll": "Voir Toutes les Commandes",
+            "myClients": "Mes Clients Connectés",
+            "noClients": "Aucun client connecté pour le moment."
+        }
+    },
+    "measurements": {
+        "title": "Mes Mesures",
+        "subtitle": "Gérez et partagez vos mesures corporelles",
+        "addNew": "+ Ajouter un Nouveau Profil",
+        "newProfile": "Nouveau Profil de Mesures",
+        "editProfile": "Modifier le Profil de Mesures",
+        "profileName": "Nom du Profil",
+        "profileNamePlaceholder": "ex. Coupe Traditionnelle, Coupe Costume",
+        "chest": "Poitrine",
+        "waist": "Taille",
+        "hips": "Hanches",
+        "shoulder": "Épaule",
+        "inseam": "Entrejambe",
+        "sleeveLength": "Longueur de Manche",
+        "neck": "Cou",
+        "save": "Enregistrer le Profil",
+        "update": "Mettre à Jour le Profil",
+        "cancel": "Annuler",
+        "copy": "Copier",
+        "copyAll": "📋 Tout Copier",
+        "edit": "✏️ Modifier",
+        "delete": "🗑️",
+        "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce profil de mesures?",
+        "empty": "Aucun profil de mesures trouvé.",
+        "createFirst": "Créez votre premier profil"
+    },
+    "orders": {
+        "myOrders": "Mes Commandes",
+        "incomingOrders": "Commandes Entrantes",
+        "subtitle": "Suivez votre parcours de vêtements sur mesure",
+        "status": {
+            "pending": "Demande Envoyée",
+            "accepted": "Acceptée",
+            "inProgress": "En Cours",
+            "completed": "Prêt/Livré",
+            "cancelled": "Annulée"
+        },
+        "tailor": "Tailleur",
+        "date": "Date",
+        "price": "Prix Total",
+        "pendingQuote": "Devis en Attente",
+        "measurements": "Mesures",
+        "customRequest": "Demande Personnalisée",
+        "noOrders": "Aucune commande trouvée.",
+        "browseDesigns": "Parcourir les Designs",
+        "rateJob": "Évaluer le Travail",
+        "payNow": "Payer en Ligne",
+        "message": "Message",
+        "attachedMeasurements": "Mesures Jointes",
+        "orderNumber": "Commande #",
+        "paymentSuccessful": "Paiement en ligne traité avec succès ! (Optionnel)",
+        "reviewSubmitted": "Avis Soumis avec Succès !",
+        "statusUpdateFailed": "Échec de la mise à jour du statut",
+        "clientDesign": "Design du Client"
+    },
+    "footer": {
+        "product": "Produit",
+        "support": "Support",
+        "contact": "Contactez-nous",
+        "about": "À Propos",
+        "description": "Vous connecter avec les meilleurs tailleurs pour votre ajustement parfait.",
+        "rights": "Tous droits réservés."
+    },
+    "modals": {
+        "review": {
+            "title": "Évaluez Votre Expérience",
+            "rating": "Votre Note",
+            "comment": "Votre Commentaire",
+            "commentPlaceholder": "Partagez votre avis sur la qualité et le service...",
+            "submit": "Soumettre l'Avis"
+        },
+        "payment": {
+            "title": "Paiement Sécurisé",
+            "amountToPay": "Montant à Payer",
+            "cardNumber": "Numéro de Carte",
+            "expiry": "Expiration",
+            "cvv": "CVV",
+            "pay": "Compléter le Paiement",
+            "processing": "Traitement..."
+        },
+        "addDesign": {
+            "title": "Ajouter un Nouveau Design",
+            "name": "Nom du Design",
+            "description": "Description",
+            "price": "Prix (GNF)",
+            "image": "Image du Design",
+            "uploading": "Téléchargement...",
+            "submit": "Ajouter au Portfolio",
+            "clickToUpload": "Cliquez pour télécharger",
+            "imageSpecs": "PNG, JPG jusqu'à 10 Mo",
+            "namePlaceholder": "ex: Boubou traditionnel, Costume moderne",
+            "descriptionPlaceholder": "Décrivez le design, les matériaux, le style...",
+            "pricePlaceholder": "ex: 500000"
+        },
+        "createOrder": {
+            "title": "Créer une Nouvelle Commande",
+            "requestDetails": "Détails de la Demande",
+            "detailsPlaceholder": "Décrivez exactement ce que vous voulez (type de tissu, détails de style, etc.)",
+            "uploadReference": "Télécharger une Image de Référence (Optionnel)",
+            "selectMeasurements": "Joindre Vos Mesures",
+            "submit": "Envoyer la Demande"
+        }
+    },
+    "tailors": {
+        "title": "Meilleurs Tailleurs",
+        "subtitle": "Découvrez les artisans les plus talentueux près de chez vous",
+        "searchPlaceholder": "Rechercher par nom ou spécialité...",
+        "allSpecialties": "Toutes les Spécialités",
+        "experience": "années d'expérience",
+        "available": "Disponible pour travailler",
+        "busy": "Occupé",
+        "editProfile": "Modifier le Profil",
+        "yearsExp": "Ans Exp.",
+        "address": "Adresse",
+        "phone": "Téléphone",
+        "chatNow": "Discuter Maintenant",
+        "hireTailor": "ENGAGER LE TAILLEUR",
+        "portfolio": "Portfolio",
+        "noDesigns": "Ce tailleur n'a pas encore mis en ligne de designs.",
+        "notFound": "Profil du tailleur non trouvé"
+    },
+    "designs": {
+        "title": "Parcourir les Designs",
+        "subtitle": "Laissez-vous inspirer par les dernières tendances",
+        "viewAll": "Voir la Galerie",
+        "detail": {
+            "back": "Retour",
+            "exclusive": "Design Exclusif",
+            "noImage": "Aucune Image Disponible",
+            "designedBy": "Conçu par",
+            "orderNow": "Commander Maintenant",
+            "askQuestion": "Poser une Question",
+            "notFound": "Design non trouvé",
+            "emptyPortfolio": "Pas encore de designs dans votre catalogue.",
+            "emptyGallery": "Aucun design trouvé."
+        },
+        "generate": {
+            "title": "Studio de Design IA",
+            "subtitle": "Décrivez la tenue de vos rêves, et notre IA lui donnera vie en quelques secondes.",
+            "promptLabel": "Décrivez votre vision",
+            "promptPlaceholder": "ex. Une robe en velours rouge avec des manches en dentelle...",
+            "inspirationsLabel": "Essayez une inspiration",
+            "generateButton": "Générer le Design",
+            "generating": "Rêverie...",
+            "emptyTitle": "Votre toile est vide",
+            "emptySubtitle": "Entrez une description à gauche pour voir vos idées prendre vie grâce à l'IA.",
+            "download": "Télécharger",
+            "findTailor": "Trouver un Tailleur",
+            "error": "Échec de la génération du design. Veuillez réessayer.",
+            "inspirations": [
+                "Un blazer moderne en imprimé africain avec des revers pointus",
+                "Une robe de soirée en soie fluide avec des broderies dorées",
+                "Un Agbada traditionnel en bleu profond avec des surpiqûres blanches",
+                "Un costume en lin minimaliste pour un mariage d'été"
+            ]
+        }
+    },
+    "chat": {
+        "messages": "Messages",
+        "empty": "Aucune conversation pour le moment.",
+        "startConversation": "Commencer une conversation",
+        "typeMessage": "Tapez un message...",
+        "webTitle": "TailorConnect Web",
+        "selectConversation": "Sélectionnez une conversation pour commencer à envoyer des messages instantanément."
+    },
+    "profile": {
+        "updateTitle": "Mettre à Jour Votre Profil",
+        "bio": "À Propos de Vous / Bio",
+        "specialty": "Spécialités (séparées par des virgules)",
+        "experience": "Années d'Expérience",
+        "location": "Lieu (Ville)",
+        "availability": "Disponible pour de nouvelles commandes",
+        "saveChanges": "Enregistrer les Modifications",
+        "specialty_lepi": "Spécialiste Lépi",
+        "specialty_kindili": "Spécialiste Kindili",
+        "specialty_foret": "Forêt Sacrée",
+        "specialty_bazin": "Bazin Rich",
+        "specialty_embroidery": "Broderie à la Main",
+        "specialty_wedding": "Mariage & Mariée",
+        "specialty_traditional": "Tenue Traditionnelle",
+        "specialty_fusion": "Fusion Moderne",
+        "specialty_suits": "Costumes",
+        "specialty_dresses": "Robes",
+        "specialty_shirts": "Chemises",
+        "specialty_alterations": "Retouches"
+    },
+    "common": {
+        "email": "Adresse Email",
+        "loading": "Chargement...",
+        "error": "Une erreur s'est produite",
+        "success": "Succès!",
+        "confirm": "Confirmer",
+        "cancel": "Annuler",
+        "save": "Enregistrer",
+        "edit": "Modifier",
+        "delete": "Supprimer",
+        "close": "Fermer",
+        "viewMore": "Voir Plus",
+        "learnMore": "En Savoir Plus"
+    },
+    "reviews": {
+        "title": "Avis Clients",
+        "count": "avis",
+        "empty": "Aucun avis pour le moment.",
+        "submit": "Soumettre l'Avis",
+        "rating": "Note",
+        "comment": "Commentaire"
+    }
+}

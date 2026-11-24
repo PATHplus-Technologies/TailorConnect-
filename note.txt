@@ -15,17 +15,31 @@ cd tailorconnect-frontend; npm run dev
 #2. frontend: Vercel
 
 #Deployment sur ngrok
-1. ngrok config add-authtoken <YOUR_PERSONAL_AUTHTOKEN>  sur ngrok.com
-A PowerShell script that will:
+Step 1 — Install ngrok
+# Option A: via winget
+winget install ngrok.ngrok
 
-Start ngrok http 3000 --host-header="localhost:3000" in a separate window.
-Poll the ngrok local API (http://127.0.0.1:4040/api/tunnels) 
-Manual Verification
-Run the script: .\start-ngrok.ps1 in PowerShell.
-Verify that three new terminal windows open:
-One for ngrok
-One for Django backend
-One for Next.js frontend
-Click the generated https://*.ngrok-free.app link.
-Verify that the TailorConnect frontend loaded correctly.
-Verify that network requests (e.g. login, fetching data) work perfectly without any CORS or CSRF errors.
+# Option B: Download from https://ngrok.com/download and add to PATH
+
+
+#Step 2 — Configure Authtoken
+#Get your authtoken
+Go to 👉 dashboard.ngrok.com/get-started/your-authtoken
+#Copy your authtoken
+#Step 3: Run this command in PowerShell:
+ngrok config add-authtoken 2abc123XYZ_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#Step 4-0:  Then launch the app in ngrok
+.\start-ngrok.ps1
+
+#Activate the virtual environment 
+.\TCvenv\Scripts\activate
+
+#Step 4-1: Launch the app
+# In backend terminal
+cd tailorconnect-backend
+python manage.py runserver
+
+# In frontend terminal
+cd tailorconnect-frontend
+npm run dev
+
